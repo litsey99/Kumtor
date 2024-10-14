@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горные Ископаемые</title>
+    <meta name="description" content="Изучите горные ископаемые, их виды, свойства и значение в нашей жизни.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2E8B57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #3CB371;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #2E8B57;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #3CB371;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2E8B57;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Горные Ископаемые</h1>
+    <p>Узнайте больше о минералах и их значении</p>
+</header>
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#about">О Нас</a>
+    <a href="#types">Типы</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#contact">Контакты</a>
+    <a href="#registration">Регистрация</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Добро пожаловать</h2>
+    <p>Горные ископаемые играют важную роль в экономике и развитии технологий. На нашем сайте вы найдете информацию о различных видах минералов, их свойствах и применении.</p>
+</div>
+
+<div class="container" id="about">
+    <h2>О Нас</h2>
+    <p>Мы команда энтузиастов, увлеченных изучением горных ископаемых. Наша миссия – предоставить достоверную информацию и повысить осведомленность о важности минералов в нашей жизни.</p>
+</div>
+
+<div class="container" id="types">
+    <h2>Типы Горных Ископаемых</h2>
+    <ul>
+        <li>
+            <strong>Металлические ископаемые:</strong>
+            Железо, медь и алюминий — основные металлы, используемые в строительстве, производстве и электротехнике. Они обеспечивают прочность и долговечность материалов.
+        </li>
+        <li>
+            <strong>Неметаллические ископаемые:</strong>
+            Кварц, соли и известняк — важные компоненты в производстве стекла, цемента и удобрений. Кварц, например, используется в электронике благодаря своим изолирующим свойствам.
+        </li>
+        <li>
+            <strong>Энергетические ископаемые:</strong>
+            Уголь, нефть и природный газ являются основными источниками энергии. Они играют ключевую роль в глобальной экономике, хотя их использование связано с экологическими проблемами.
+        </li>
+        <li>
+            <strong>Драгоценные камни:</strong>
+            Алмазы, рубины и изумруды не только прекрасны, но и символизируют богатство и статус. Алмазы, например, известны своей исключительной твердостью и используются не только в ювелирных изделиях, но и в промышленности.
+        </li>
+        <li>
+            <strong>Рудные ископаемые:</strong>
+            Это минералы, содержащие полезные металлы, такие как золото, серебро и никель. Они добываются для переработки и использования в различных отраслях.
+        </li>
+        <li>
+            <strong>Соли:</strong>
+            Соли, такие как натрий хлорид (поваренная соль), важны не только в кулинарии, но и в химической промышленности, где используются в производстве различных соединений.
+        </li>
+        <li>
+            <strong>Известняк:</strong>
+            Этот неметаллический минерал часто используется в строительстве, производстве цемента и как известь в сельском хозяйстве для улучшения почвы.
+        </li>
+    </ul>
+</div>
+
+<div class="container" id="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery">
+        <div>
+            <img src="https://example.com/image1.jpg" alt="Алмаз - драгоценный камень, известный своей твердостью">
+            <p><strong>Алмаз:</strong> Самый твердый известный минерал, который образуется под высоким давлением в земной коре. Используется не только в ювелирных изделиях, но и в промышленности для резки и шлифовки.</p>
+        </div>
+        <div>
+            <img src="https://example.com/image2.jpg" alt="Медная руда - источник меди, используемой в электротехнике">
+            <p><strong>Медная руда:</strong> Основной источник меди, которая используется в электрических проводах и строительстве. Медь также имеет антимикробные свойства, что делает её полезной в медицинских приложениях.</p>
+        </div>
+        <div>
+            <img src="https://example.com/image3.jpg" alt="Изумруд - драгоценный камень зеленого цвета">
+            <p><strong>Изумруд:</strong> Один из самых ценных драгоценных камней, известный своим насыщенным зеленым цветом. Изумруды образуются в особых геологических условиях и часто имеют естественные включения.</p>
+        </div>
+        <div>
+            <img src="https://example.com/image4.jpg" alt="Золото - драгоценный металл, используемый в ювелирных изделиях">
+            <p><strong>Золото:</strong> Драгоценный металл, известный своей редкостью и устойчивостью к коррозии. Используется в ювелирных изделиях, электронике и инвестициях.</p>
+        </div>
+        <div>
+            <img src="https://example.com/image5.jpg" alt="Натрий хлорид - соль, используемая в кулинарии">
+            <p><strong>Соль:</strong> Натрий хлорид, важный минерал, который используется в кулинарии и химической промышленности. Соль необходима для поддержания баланса жидкости в организме.</p>
+        </div>
+        <div>
+            <img src="https://example.com/image6.jpg" alt="Известняк - минерал, используемый в строительстве">
+            <p><strong>Известняк:</strong> Неметаллический минерал, широко используемый в строительстве, производстве цемента и в качестве извести в сельском хозяйстве.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Контакты</h2>
+    <p>Если у вас есть вопросы или предложения, свяжитесь с нами:</p>
+    <ul>
+        <li>Email: info@mineralsite.kg</li>
+        <li>Телефон: +996 (123) 456-7890</li>
+        <li>Адрес: ул. Гоголя фрунзе, д. 1, Бишкек, Кыргызстан</li>
+    </ul>
+</div>
+
+<div class="container" id="registration">
+    <h2>Регистрация</h2>
+    <form action="/register" method="POST">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Горные Ископаемые. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
