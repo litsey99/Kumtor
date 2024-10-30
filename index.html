@@ -1,216 +1,270 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Горные Ископаемые</title>
-    <meta name="description" content="Изучите горные ископаемые, их виды, свойства и значение в нашей жизни.">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2E8B57;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #3CB371;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #2E8B57;
-        }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #2E8B57;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 400px;
-            margin: auto;
-        }
-        label {
-            margin: 10px 0 5px;
-        }
-        input {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            padding: 10px;
-            background-color: #3CB371;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #2E8B57;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-    </style>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <title>Rock Fossils | Fossils</title>
+  </head>
+  <body>
+    <nav id='parent-block' class="parent">
+      <div class="nav__logo">
+        <a href="#"><img src="logo.png" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Главное</a></li>
+        <li class="link"><a href="#">Программа</a></li>
+        <li class="link"><a href="#">Услуга</a></li>
+        <li class="link"><a href="#">О нас</a></li>
+        <li class="link"><a href="#">Сообщество</a></li>
+      </ul>
+      <button id="sign" class="btn">Sign</button>
+      <button id="login" class="btn">Login</button>
+      <div id="modal" class="modal-main">
+        
+      </div>
 
-<header>
-    <h1>Горные Ископаемые</h1>
-    <p>Узнайте больше о минералах и их значении</p>
-</header>
+    </nav>
+   
+    <header class="section__container header__container">
+      <div class="header__content">
+        <span class="bg__blur"></span>
+        <span class="bg__blur header__blur"></span>
+        <h4>ДОБРО ПОЖАЛОВАТЬ</h4>
+        <h1><span>ОТКРОЙТЕ</span> ДЛЯ СЕБЯ СОКРОВИЩА СВОЕЙ ЗЕМЛИ</h1>
+        <p>
+          Откройте скрытые сокровища Земли и отправляйтесь в путешествие, чтобы открыть богатства под вашими ногами. Зарегистрируйтесь на «Изучите минералы гор» сейчас и станьте свидетелем невероятных чудес, которые может предложить наша планета!
+        </p>
+        <button class="btn">Начать</button>
+      </div>
+      <div class="header__image">
+        <img src="header.png" alt="header" />
+      </div>
+    </header>
 
-<nav>
-    <a href="#home">Главная</a>
-    <a href="#about">О Нас</a>
-    <a href="#types">Типы</a>
-    <a href="#gallery">Галерея</a>
-    <a href="#contact">Контакты</a>
-    <a href="#registration">Регистрация</a>
-</nav>
+    <section class="section__container explore__container">
+      <div class="explore__header">
+        <h2 class="section__header">ИЗУЧИТЕ НАШУ ПРОГРАММУ</h2>
+      </div>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-boxing-fill"></i></span>
+          <h4>Минеральная устойчивость</h4>
+          <p>
+            Используйте силу Земли и отправляйтесь в путешествие, чтобы открыть мощные минералы и ресурсы, которые формируют наш мир. Зарегистрируйтесь на «Силу гор» сейчас и ощутите невероятный потенциал даров природы!».
+          </p>
+          <a href="#">Присоединяйтесь сейчас  <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-heart-pulse-fill"></i></span>
+          <h4>Геологическая разведка</h4>
+          <p>
+            Она охватывает различные исследования, которые расширяют знания, управление ресурсами, устойчивость и общую оценку сокровищ Земли. Каждое исследование предлагает уникальные перспективы, позволяя углубить понимание экологических и экономических аспектов использования природных ресурсов.
+          </p>
+          <a href="#">Присоединяйтесь сейчас <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-device-recover-line"></i></span>
+          <h4>Восстановление ресурсов</h4>
+          <p>
+            Благодаря сочетанию методов исследования и экспертных знаний мы дадим вам возможность раскрыть богатства Земли. Наши программы помогут вам развить навыки, необходимые для ответственного использования и сохранения этих ресурсов.
+          </p>
+          <a href="#">Присоединяйтесь сейчас  <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-shopping-bag-3-line"></i></span>
+          <h4>Зачем она нужна нам</h4>
+          <p>
+            Наша программа, созданная для энтузиастов, предлагает эффективный подход к обнаружению и устойчивому использованию природных ресурсов. Мы стремимся вдохновить участников на ответственное отношение к окружающей среде и глубокое понимание важности сохранения природного наследия.
+          </p>
+          <a href="#">Присоединяйтесь сейчас <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
 
-<div class="container" id="home">
-    <h2>Добро пожаловать</h2>
-    <p>Горные ископаемые играют важную роль в экономике и развитии технологий. На нашем сайте вы найдете информацию о различных видах минералов, их свойствах и применении.</p>
-</div>
+    <section class="section__container class__container">
+      <div class="class__image">
+        <span class="bg__blur"></span>
+        <img src="class-1.jpg" alt="class" class="class__img-1" />
+        <img src="class-2.jpg" alt="class" class="class__img-2" />
+      </div>
+      <div class="class__content">
+        <h2 class="section__header">ГОРНЫЕ ИСКОПАЕМЫЕ, КОТОРЫЕ ВЫ ЗДЕСЬ ИЗУЧИТЕ</h2>
+        <p>
+          Под руководством нашей команды опытных и вдохновляющих инструкторов, "Горные Ископаемые, Которые Вы Здесь Узнаете" — это динамичный и интерактивный курс, который сочетает в себе теорию, практические занятия и увлекательные проекты. Каждый урок тчательно продуман, чтобы поддерживать ваш интерес и углублять понимание тематики, от формирования минералов до их применения в промышленности. Приготовьтесь к активному обучению и получению новых знаний, которые помогут вам в вашей карьере и жизни!
+        </p>
+        <button class="btn">Забронируйте класс A</button>
+      </div>
+    </section>
 
-<div class="container" id="about">
-    <h2>О Нас</h2>
-    <p>Мы команда энтузиастов, увлеченных изучением горных ископаемых. Наша миссия – предоставить достоверную информацию и повысить осведомленность о важности минералов в нашей жизни.</p>
-</div>
+    <section class="section__container join__container">
+      <h2 class="section__header">ПОЧЕМУ ПРИСОЕДИНЯЙТЕСЬ К НАМ??</h2>
+      <p class="section__subheader">
+        Наша  разнообразная группа участников создает дружелюбную и поддерживающую атмосферу, где вы сможете завести новых друзей и оставаться мотивированными. Вы будете окружены единомышленниками, которые разделяют вашу страсть к горным ископаемым, что сделает обучение еще более увлекательным и продуктивным.
+      </p>
+      <div class="join__image">
+        <img src="join.jpg" alt="Join" />
+        <div class="join__grid">
+          <div class="join__card">
+            <span><i class="ri-user-star-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Личный тренер</h4>
+              <p>Разблокируйте свой потенциал с нашими экспертами по горным ископаемым!</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-book-3-line"></i></span>
+            <div class="join__card__content">
+              <h4>Практика</h4>
+              <p>Повышайте свои знания о горных ископаемых на практических занятиях!</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-building-2-line"></i></span>
+            <div class="join__card__content">
+              <h4>Хорошее управление</h4>
+              <p>Поддержка и руководство для вашего успеха в изучении горных ископаемых!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="container" id="types">
-    <h2>Типы Горных Ископаемых</h2>
-    <ul>
-        <li>
-            <strong>Металлические ископаемые:</strong>
-            Железо, медь и алюминий — основные металлы, используемые в строительстве, производстве и электротехнике. Они обеспечивают прочность и долговечность материалов.
-        </li>
-        <li>
-            <strong>Неметаллические ископаемые:</strong>
-            Кварц, соли и известняк — важные компоненты в производстве стекла, цемента и удобрений. Кварц, например, используется в электронике благодаря своим изолирующим свойствам.
-        </li>
-        <li>
-            <strong>Энергетические ископаемые:</strong>
-            Уголь, нефть и природный газ являются основными источниками энергии. Они играют ключевую роль в глобальной экономике, хотя их использование связано с экологическими проблемами.
-        </li>
-        <li>
-            <strong>Драгоценные камни:</strong>
-            Алмазы, рубины и изумруды не только прекрасны, но и символизируют богатство и статус. Алмазы, например, известны своей исключительной твердостью и используются не только в ювелирных изделиях, но и в промышленности.
-        </li>
-        <li>
-            <strong>Рудные ископаемые:</strong>
-            Это минералы, содержащие полезные металлы, такие как золото, серебро и никель. Они добываются для переработки и использования в различных отраслях.
-        </li>
-        <li>
-            <strong>Соли:</strong>
-            Соли, такие как натрий хлорид (поваренная соль), важны не только в кулинарии, но и в химической промышленности, где используются в производстве различных соединений.
-        </li>
-        <li>
-            <strong>Известняк:</strong>
-            Этот неметаллический минерал часто используется в строительстве, производстве цемента и как известь в сельском хозяйстве для улучшения почвы.
-        </li>
-    </ul>
-</div>
+    <section class="section__container price__container">
+      <h2 class="section__header">НАШ ЦЕНОВОЙ ПЛАН</h2>
+      <p class="section__subheader">
+        Наш план цен включает различные уровни, каждый из которых разработан для удовлетворения разных предпочтений и интересов в области горных ископаемых.
+      </p>
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Базовый план</h4>
+            <h3>$16</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Изучение основ минералогии и петрологии.
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Установка конкретных целей для изучения.
+            </p>
+          </div>
+          <button class="btn price__btn">Присоединяйтесь сейчас </button>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Еженедельный план</h4>
+            <h3>$25</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Онлайн-курсы и книги по минералогии.
 
-<div class="container" id="gallery">
-    <h2>Галерея</h2>
-    <div class="gallery">
-        <div>
-            <img src="https://example.com/image1.jpg" alt="Алмаз - драгоценный камень, известный своей твердостью">
-            <p><strong>Алмаз:</strong> Самый твердый известный минерал, который образуется под высоким давлением в земной коре. Используется не только в ювелирных изделиях, но и в промышленности для резки и шлифовки.</p>
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Онлайн-курсы и книги по минералогии.
+
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Практика в полевых условиях.
+            </p>
+          </div>
+          <button class="btn price__btn">Присоединяйтесь сейчас </button>
         </div>
-        <div>
-            <img src="https://example.com/image2.jpg" alt="Медная руда - источник меди, используемой в электротехнике">
-            <p><strong>Медная руда:</strong> Основной источник меди, которая используется в электрических проводах и строительстве. Медь также имеет антимикробные свойства, что делает её полезной в медицинских приложениях.</p>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Ежемесячный план</h4>
+            <h3>$45</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Глубокое понимание горных ископаемых.
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Развитие практических навыков.
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Исследование редких минералов.
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Анализ образцов с использованием специального оборудования.
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Проведение экспериментов.
+            </p>
+          </div>
+          <button class="btn price__btn">Присоединяйтесь сейчас </button>
         </div>
-        <div>
-            <img src="https://example.com/image3.jpg" alt="Изумруд - драгоценный камень зеленого цвета">
-            <p><strong>Изумруд:</strong> Один из самых ценных драгоценных камней, известный своим насыщенным зеленым цветом. Изумруды образуются в особых геологических условиях и часто имеют естественные включения.</p>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="section__container review__container">
+        <span><i class="ri-double-quotes-r"></i></span>
+        <div class="review__content">
+          <h4>Aibek Ibraimakunov</h4>
+          <p>
+            Что действительно отличает эту компанию по добыче горных ископаемых, так это их команда экспертов. Специалисты обладают глубокими знаниями и опытом, а также искренне заинтересованы в достижении высоких результатов. Они тщательно анализируют потребности клиентов и разрабатывают индивидуальные стратегии работы, чтобы обеспечить максимальную эффективность и безопасность на каждом этапе.
+          </p>
+          <div class="review__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-half-fill"></i></span>
+          </div>
+          </div>
         </div>
-        <div>
-            <img src="https://example.com/image4.jpg" alt="Золото - драгоценный металл, используемый в ювелирных изделиях">
-            <p><strong>Золото:</strong> Драгоценный металл, известный своей редкостью и устойчивостью к коррозии. Используется в ювелирных изделиях, электронике и инвестициях.</p>
+      </div>
+    </section>
+
+    <footer class="section__container footer__container">
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo"><img src="logo.png" alt="logo" /></div>
+        <p>
+          Сделайте первый шаг к эффективному развитию вашего бизнеса с нашими непревзойденными ценовыми предложениями на добычу горных ископаемых. Давайте работать, достигать целей и побеждать вместе!
+        </p>
+        <div class="footer__socials">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
         </div>
+      </div>
+      <div class="footer__col">
+        <h4>Компании</h4>
+        <a href="#">Business</a>
+        <a href="#">Franchise</a>
+        <a href="#">Partnership</a>
+        <a href="#">Network</a>
+      </div>
+      <div class="footer__col">
+        <h4>О нас</h4>
+        <a href="#">Blogs</a>
+        <a href="#">Security</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer__col">
+        <h4>Кантакты</h4>
+        <a href="#">Email: info@mineralsite.kg</a>
+        <a href="#">phone: +996 (123) 456-7890</a>
+        <a href="#">Address: Gogol str., 1, Bishkek, Kyrgyzstan</a>
         <div>
-            <img src="https://example.com/image5.jpg" alt="Натрий хлорид - соль, используемая в кулинарии">
-            <p><strong>Соль:</strong> Натрий хлорид, важный минерал, который используется в кулинарии и химической промышленности. Соль необходима для поддержания баланса жидкости в организме.</p>
-        </div>
-        <div>
-            <img src="https://example.com/image6.jpg" alt="Известняк - минерал, используемый в строительстве">
-            <p><strong>Известняк:</strong> Неметаллический минерал, широко используемый в строительстве, производстве цемента и в качестве извести в сельском хозяйстве.</p>
-        </div>
+      </div>
+    </footer>
+    <div class="footer__bar">
+      Авторские права © 2024 Web Design Mastery. Все права защищены.
     </div>
-</div>
-
-<div class="container" id="contact">
-    <h2>Контакты</h2>
-    <p>Если у вас есть вопросы или предложения, свяжитесь с нами:</p>
-    <ul>
-        <li>Email: info@mineralsite.kg</li>
-        <li>Телефон: +996 (123) 456-7890</li>
-        <li>Адрес: ул. Гоголя фрунзе, д. 1, Бишкек, Кыргызстан</li>
-    </ul>
-</div>
-
-<div class="container" id="registration">
-    <h2>Регистрация</h2>
-    <form action="/register" method="POST">
-        <label for="username">Имя пользователя:</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Зарегистрироваться</button>
-    </form>
-</div>
-
-<footer>
-    <p>&copy; 2024 Горные Ископаемые. Все права защищены.</p>
-</footer>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
