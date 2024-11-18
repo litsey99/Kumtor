@@ -93,7 +93,7 @@ nav {
 }
 
 .nav__logo {
-  max-width: 150px;
+  max-width: 155px;
 }
 
 .nav__links {
@@ -124,9 +124,9 @@ nav {
   width: 50%;
 }
 
-.header__container {
+.header__container { 
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -147,7 +147,7 @@ nav {
 }
 
 .header__blur {
-  bottom: 5rem;
+  bottom: 3rem;
   right: 0;
 }
 
@@ -199,8 +199,9 @@ nav {
 }
 
 .header__image img {
-  max-width: 350px;
+  max-width: 340px;
   margin: auto;
+  transform: translateY(-180px); 
 }
 
 .explore__header {
@@ -245,7 +246,6 @@ nav {
   border-radius: 10px;
   transition: 0.3s;
 }
-
 .explore__card:hover {
   background-color: var(--primary-color-extra-light);
   border-color: var(--secondary-color);
@@ -500,7 +500,6 @@ nav {
   align-items: center;
   gap: 2rem;
 }
-
 .review__nav span {
   font-size: 2rem;
   color: var(--secondary-color);
@@ -520,7 +519,7 @@ nav {
 }
 
 .footer__logo {
-  max-width: 150px;
+  max-width: 100px;
   margin-bottom: 2rem;
 }
 
